@@ -1,0 +1,163 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.header {
+    background: rgb(184, 161, 161);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+}
+
+.logo {
+    display: flex;
+}
+
+.ch {
+    display: block;
+}
+
+.text_tag h1 {
+    font-size: 35px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.nav li {
+    padding: 0 10px 0 0;
+}
+
+.nav li:hover {
+    text-decoration: underline;
+}
+
+.nav ul img {
+    width: 20px;
+    border-radius: 100%;
+}
+
+/* main section */
+
+.img_header img {
+    width: 95%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.img_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.event{
+    background: rgb(184, 161, 161);
+    height: 200px;
+    width: 48%;
+}
+.event_head, .current_weather h3,.weather_forcast h3{
+    border: 1px solid black;
+    background-color: rgb(51, 50, 50);
+    color: whitesmoke;
+    padding: 0 0  0 5px;
+}
+.current_weather{
+    background: rgb(184, 161, 161);
+    height: 200px;
+    width: 24%;
+}
+.information .divide{
+    display: block;
+}
+.cw_body{
+    display: flex;
+}
+.weather_forcast{
+    background: rgb(184, 161, 161);
+    height: 200px;
+    width: 24%;
+}
+.w_para{
+    padding: 10px 0 0 10px;
+}
+p .w_para{
+    padding: 10px
+}
+.second_div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 25px;
+}
+section > h1{
+    padding: 10px 0 10px 30px;
+}
+.bizinfor_1{
+    background: rgb(184, 161, 161);
+    width: 32%;
+    border-radius: 10px;
+}
+
+.head1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    border-radius: 10px 10PX 0 0;
+    padding: 5PX;
+
+    
+}
+.third_div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 25px;
+    padding-top: 10px;
+}
+.img1{
+    width: 60%;
+    height: 75px;
+    background: rgb(243, 139, 139);
+    border-bottom-left-radius: 10px;
+    margin: 2px;
+}
+.tail1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.infor{
+    margin: 2px;
+}
+
+.footer{
+    background: rgb(184, 161, 161);
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+p .div{
+    display: block;
+}
+i{
+    font-size: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 10px;
+    background: rgb(175, 169, 169);
+
+
+}
