@@ -28,7 +28,7 @@
     font-size: 35px;
 }
 
-.nav ul {
+.nav ul{
     display: flex;
     list-style: none;
 
@@ -152,12 +152,47 @@ section > h1{
 p .div{
     display: block;
 }
-i{
+.fa,.fa-brands{
     font-size: 30px;
     border: 1px solid white;
     border-radius: 100%;
     padding: 10px;
     background: rgb(175, 169, 169);
+}
+.fa-solid{
+    display: none;
+}
+.hamnburger_dir{
+    display:none;
+}
 
+@media screen and (max-width: 320px) {
+    body{
+        padding: 0%;
+        margin: 0%;
+        width: 100%;
+    }
+    .nav{
+        display: none;
+    }
+    .header{
+        padding: 10px;
+        margin: 0%;
+    }
+    .fa-solid{
+        display: block;
+        font-size: 30px;
+        color: black;
+    }
+    .hamnburger_dir{
+        display: block;
+        position: fixed;
+        z-index: 999;
+        background-color: aquamarine;
+        color: black;
+        float: right;
+        width: 100vw;
 
+        height: 100vh;
+    }
 }
