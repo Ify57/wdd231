@@ -21,6 +21,9 @@ body{
 
 .logo {
     display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+
 }
 
 .ch {
@@ -202,22 +205,116 @@ main h1{
     width: 337px;
     height: 150px;
 }
-@media screen and (max-width: 320px) {
+.hamburger{
+    display: none;
+}
+.new_flex,.logo{
+    display: flex;
+}
+.intro{
+    display: flex;
+}
+.ul ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.fa-solid{
+   display: none; 
+}
+@media screen and (max-width: 400px) {
     body{
         padding: 0%;
         margin: 0%;
         max-width: 100%;
     }
-    h1{
-        font-size: small;
-        font-weight: 100;
-    }
     .nav ul {
         display: block;
     }
-    .header{
+    .nav{
+        display: none;
+    }
+    .hamburger{
+        display: contents;
+        
+    }
+    .hamburger ul{
+        list-style-type: none;
+
+        
+    }
+    .hamburger ul li{
         padding: 10px;
-        margin: 0%;
+        text-align: center;
+        border-bottom: 1px solid black;        
+        width: 100vw;
+    }
+    .hamburger ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: larger;
+        user-select: none;
+        
+    }
+    i{
+            
+        font-size: 30px;
+        color: black;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .intro{
+        display: flex;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    
+    .logo-img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .text_tag h1 {
+        font-size: 25px;
+    }
+    
+    .nav ul img {
+        width: 15px;
+    }
+    
+    .img_header img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .event, .current_weather, .weather_forcast {
+        width: 100%;
+        height: auto;
+}
+    .header {
+    background: rgb(184, 161, 161);
+    display: block;
+    justify-content: start;
+    align-items: start;
+    padding: 0 70px;
+}
+    #nav, #ham{
+        display: block;
+        /* position: fixed; */
+        background: #000 transparent;
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+        display: none;
+        justify-content: center;
+      }
+
+    .header{
+        padding: 0%;
     }
     
 }
