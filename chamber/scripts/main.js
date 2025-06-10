@@ -30,3 +30,18 @@ function closesidebar() {
     const hide = document.getElementById('ham');
     hide.style.display = 'none';
 }
+function gold(){
+    alert('gold model content')
+}
+
+function silver(){
+    alert('silver model content')
+}
+
+function bronze(){
+    alert('bronze model content')
+}
+
+function non(){
+    alert('Non Profit model content')
+}
