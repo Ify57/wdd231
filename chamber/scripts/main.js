@@ -45,3 +45,9 @@ function bronze(){
 function non(){
     alert('Non Profit model content')
 }
+const date = new Date();
+// alert(date.get);
+const infor = document.getElementById('infor')
+let needed = date.getDate()+'/'+date.getMonth()+'/'+date.getFullYear()+',  '+'  '+date.toLocaleTimeString('en-US', { hour12: true });
+infor.innerHTML = needed;
+// const needed = date.
