@@ -332,7 +332,6 @@ label{
 dialog{
     margin: 20% 0 0 45%;
     padding: 30px;
-    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
