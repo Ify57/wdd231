@@ -30,24 +30,59 @@ function closesidebar() {
     const hide = document.getElementById('ham');
     hide.style.display = 'none';
 }
-function gold(){
-    alert('gold model content')
-}
 
-function silver(){
-    alert('silver model content')
-}
 
-function bronze(){
-    alert('bronze model content')
-}
+const bronze = document.getElementById('dialog_bronze');
+const btn_bronze = document.getElementById('btn_bronze');
 
-function non(){
-    alert('Non Profit model content')
-}
-const date = new Date();
-// alert(date.get);
-const infor = document.getElementById('infor')
-let needed = date.getDate()+'/'+date.getMonth()+'/'+date.getFullYear()+',  '+'  '+date.toLocaleTimeString('en-US', { hour12: true });
-infor.innerHTML = needed;
+const silver = document.getElementById('dialog_silver');
+const btn_silver = document.getElementById('silver');
+
+
+const gold = document.getElementById('dialog_gold');
+const btn_gold = document.getElementById('gold');
+
+const non = document.getElementById('dialog_non');
+const btn_non = document.getElementById('non');
+
+const cancel = document.getElementsByClassName('cancel');
+
+
+btn_bronze.addEventListener('click',() => bronze.showModal());
+btn_silver.addEventListener('click',() => silver.showModal());
+btn_gold.addEventListener('click',() => gold.showModal());
+btn_non.addEventListener('click',() => non.showModal());
+
+cancel.addEventListener('click', () => {
+    bronze.close();
+    silver.close();
+    gold.close();
+    non.close();
+})
+
+
+
+
+
+// function gold(){
+//     alert('gold model content')
+// }M
+
+// function silver(){
+//     alert('silver model content')
+// }
+
+// function bronze(){
+//     alert('bronze model content')
+// }
+
+// function non(){
+//     alert('Non Profit model content')
+// // }
+// const date = new Date();
+// // alert(date.get);
+// const infor = document.getElementById('infor')
+// let needed = date.getDate()+'/'+date.getMonth()+'/'+date.getFullYear()+',  '+'  '+date.toLocaleTimeString('en-US', { hour12: true });
+// infor.innerHTML = needed;
 // const needed = date.
+

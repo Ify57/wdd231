@@ -323,6 +323,20 @@ label{
     flex-direction: row;
     margin: 20px;
 }
+.First{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center
+}
+dialog{
+    margin: 20% 0 0 45%;
+    padding: 30px;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 @media screen and (max-width: 360px) {
     body{
         padding: 0%;
