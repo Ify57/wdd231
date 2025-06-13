@@ -45,7 +45,10 @@ const btn_gold = document.getElementById('gold');
 const non = document.getElementById('dialog_non');
 const btn_non = document.getElementById('non');
 
-const cancel = document.getElementsByClassName('cancel');
+const cancel1 = document.getElementById('cancel1');
+const cancel2 = document.getElementById('cancel2');
+const cancel3 = document.getElementById('cancel3');
+const cancel4 = document.getElementById('cancel4');
 
 
 btn_bronze.addEventListener('click',() => bronze.showModal());
@@ -53,12 +56,10 @@ btn_silver.addEventListener('click',() => silver.showModal());
 btn_gold.addEventListener('click',() => gold.showModal());
 btn_non.addEventListener('click',() => non.showModal());
 
-cancel.addEventListener('click', () => {
-    bronze.close();
-    silver.close();
-    gold.close();
-    non.close();
-})
+cancel1.addEventListener('click', () => {gold.close();})
+cancel2.addEventListener('click', () => {silver.close();})
+cancel3.addEventListener('click', () => {bronze.close();})
+cancel4.addEventListener('click', () => {non.close();})
 
 
 
