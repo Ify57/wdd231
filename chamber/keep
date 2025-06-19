@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onitsha Chamber of Commerce</title>
+    <meta name="description" content="The Chamber of Commerce Project Description">
+    <meta name="author" content="ifeanyi oleforo">
+    <link rel="icon" href="chamber.jpg" type="image/x-icon">
+    <meta property="og:title" content="The Chamber of Commerce Project Description">
+    <meta property="og:description" content="The Chamber of Commerce Project Description">
+    <meta property="og:image" content="chamber.jpg">
+    <meta property="og:url" content="https://ify57.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/7032d77c7c.js" crossorigin="anonymous"></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <div class="intro">
+                    <img src="images/download.jfif" class="logo-img" alt="">
+                    <div class="text_tag">
+                        <h1>Onitsha</h1>
+                        <p>Chamber of Commerce</p>
+                    </div>
+                </div>
+                <div class="burger">
+                    <i onclick=showsidebar() class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div id="ham">
+                <nav class="hamburger">
+                    <ul id="ul">
+                        <li><a href="#">Home</a> <i onclick=closesidebar() class="fa-solid fa-xmark"></i></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="#">Discover</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="nav">
+                <nav>
+                    <div class="ul">
+                        <ul>
+                            <li> <a href="#">Home</a></li>
+                            <li> <a href="directory.html">Directory</a></li>
+                            <li> <a href="join.html">Join</a></li>
+                            <li> <a href="#">Discover</a></li>
+                            <img src="images/ws.jpeg" alt="half_moon">
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        </div>
+    </header>
+    <section>
+        <div class="main-d">
+            <div class="cards__">
+                <h2>title</h2>
+                <figure><img src="" alt=""></figure>
+                <address></address>
+                <p>description</p>
+                <button title="leaarn more">Learn More</button>
+            </div>
+
+            <div class="cards__">
+                <h2>title</h2>
+                <figure><img src="" alt=""></figure>
+                <address></address>
+                <p>description</p>
+                <button title="leaarn more">Learn More</button>
+            </div>
+
+            <div class="cards__">
+                <h2>title</h2>
+                <figure><img src="" alt=""></figure>
+                <address></address>
+                <p>description</p>
+                <button title="leaarn more">Learn More</button>
+            </div>
+
+            <div class="cards__">
+                <h2>title</h2>
+                <figure><img src="" alt=""></figure>
+                <address></address>
+                <p>description</p>
+                <button title="leaarn more">Learn More</button>
+            </div>
+
+            <div class="cards__">
+                <h2>title</h2>
+                <figure><img src="" alt=""></figure>
+                <address></address>
+                <p>description</p>
+                <button title="leaarn more">Learn More</button>
+            </div>
+
+            <div class="cards__">
+                <h2>title</h2>
+                <figure><img src="" alt=""></figure>
+                <address></address>
+                <p>description</p>
+                <button title="leaarn more">Learn More</button>
+            </div>
+
+            <div class="cards__">
+                <h2>title</h2>
+                <figure><img src="" alt=""></figure>
+                <address></address>
+                <p>description</p>
+                <button title="leaarn more">Learn More</button>
+            </div>
+
+            <div class="cards__">
+                <h2>title</h2>
+                <figure><img src="" alt=""></figure>
+                <address></address>
+                <p>description</p>
+                <button title="leaarn more">Learn More</button>
+            </div>
+
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="footer_first">
+                <h3>Onitsha Chamber of Commerce</h3>
+                <p>
+                    12 Ridge Road <span class="div">GRA, Onitsha 434108, Anambra</span>
+                    <span class="div">info@onitshachamberofcommerce.com</span>
+                    <span class="div">08160875167</span>
+                </p>
+            </div>
+            <div class="footer_second">
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </div>
+
+            <div class="third">
+                <p>WDD231 Class Project <span class="div">ifeanyi oleforo</span> <span class="div">&#169; 2025 Onitsha
+                        Chamber of Commerce</span> <span class="div">Last Modification: 10/21/202x 22:12:35</span> </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

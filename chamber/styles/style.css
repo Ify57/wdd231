@@ -336,6 +336,46 @@ dialog{
     justify-content: center;
     align-items: center;
 }
+#greeting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+}
+.main-d{
+    display: grid;
+    grid-template-columns: 25% 25%;
+    grid-area: 
+    "sect1 sect1 sect2"
+    "sect3 sect4"
+    "sect5 sect6"
+    "sect7 sect8"
+    ;
+}
+
+.cards__{
+    border: 1px solid ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.cards__ img{
+    max-width: 90%;
+}
+.cards__ button{
+    width: 100px;
+    height: 50px;
+    color: white;
+    background: rgb(40, 39, 39);
+    border-radius: 20px;
+    margin: 10px;
+}
+
 
 @media screen and (max-width: 360px) {
     body{
@@ -432,6 +472,14 @@ dialog{
     .header{
         padding: 0%;
     }
+    .main-d{
+    display: block;
+    width: 100%;
+    grid-template-columns: 100%;
+}
     
 }
 
+.cards__{
+    
+}

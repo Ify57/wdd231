@@ -1,24 +1,28 @@
-// const API_KEY = '69fc43aded5234537ff036a9f4fc41cd'; // Replace with your OpenWeatherMap API key
 
-// const city = 'london'
-// const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
+const greeting = document.getElementById('greeting');
+const lastVisit = localStorage.getItem('lastVisit');
+const now = new Date();
 
-// try {
-//     const response = await fetch(url);
-//     if (!response.ok) {
-//         throw new Error('City not found');
-//     }
+if (!lastVisit) {
+    // First-time visit
+    greeting.textContent = "Welcome! Let us know if you have any questions.";
+} else {
+    const previousVisit = new Date(lastVisit);
+    const timeDiff = now - previousVisit; // in milliseconds
+    const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24)); // Convert ms to whole days
 
-//     const data = await response.json();
-//     const weatherHTML = `
-//         <h2>Weather in ${data.name}</h2>
-//         <p><strong>Temperature:</strong> ${data.main.temp}°C</p>
-//     `;
-//     document.getElementById('break').innerHTML = weatherHTML;
-//     alert('weatherHTML');
-// } catch (error) {
-//     document.getElementById('break').innerHTML = `<p>Error: ${error.message}</p>`;
-// }
+    if (daysDiff < 1) {
+        greeting.textContent = "Back so soon! Awesome!";
+    } else if (daysDiff === 1) {
+        greeting.textContent = "You last visited 1 day ago.";
+    } else {
+        greeting.textContent = `You last visited ${daysDiff} days ago.`;
+    }
+}
+
+// Save the current visit time for next time
+localStorage.setItem('lastVisit', now);
+
 
 function showsidebar() {
     const sidebar = document.getElementById('ham');
@@ -51,39 +55,14 @@ const cancel3 = document.getElementById('cancel3');
 const cancel4 = document.getElementById('cancel4');
 
 
-btn_bronze.addEventListener('click',() => bronze.showModal());
-btn_silver.addEventListener('click',() => silver.showModal());
-btn_gold.addEventListener('click',() => gold.showModal());
-btn_non.addEventListener('click',() => non.showModal());
+btn_bronze.addEventListener('click', () => bronze.showModal());
+btn_silver.addEventListener('click', () => silver.showModal());
+btn_gold.addEventListener('click', () => gold.showModal());
+btn_non.addEventListener('click', () => non.showModal());
 
-cancel1.addEventListener('click', () => {gold.close();})
-cancel2.addEventListener('click', () => {silver.close();})
-cancel3.addEventListener('click', () => {bronze.close();})
-cancel4.addEventListener('click', () => {non.close();})
+cancel1.addEventListener('click', () => { gold.close(); })
+cancel2.addEventListener('click', () => { silver.close(); })
+cancel3.addEventListener('click', () => { bronze.close(); })
+cancel4.addEventListener('click', () => { non.close(); })
 
-
-
-
-
-// function gold(){
-//     alert('gold model content')
-// }M
-
-// function silver(){
-//     alert('silver model content')
-// }
-
-// function bronze(){
-//     alert('bronze model content')
-// }
-
-// function non(){
-//     alert('Non Profit model content')
-// // }
-// const date = new Date();
-// // alert(date.get);
-// const infor = document.getElementById('infor')
-// let needed = date.getDate()+'/'+date.getMonth()+'/'+date.getFullYear()+',  '+'  '+date.toLocaleTimeString('en-US', { hour12: true });
-// infor.innerHTML = needed;
-// const needed = date.
 
