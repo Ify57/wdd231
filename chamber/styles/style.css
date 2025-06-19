@@ -347,12 +347,6 @@ dialog{
 .main-d{
     display: grid;
     grid-template-columns: 25% 25%;
-    grid-area: 
-    "sect1 sect1 sect2"
-    "sect3 sect4"
-    "sect5 sect6"
-    "sect7 sect8"
-    ;
 }
 
 .cards__{
@@ -477,9 +471,5 @@ dialog{
     width: 100%;
     grid-template-columns: 100%;
 }
-    
-}
-
-.cards__{
     
 }
