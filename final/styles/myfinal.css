@@ -379,7 +379,10 @@ body {
   max-height: 80px;
 }
 #hidden{
-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  padding-top: 20px;
 }
 .footer-content{
   display: block;
