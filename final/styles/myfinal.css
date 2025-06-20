@@ -380,5 +380,7 @@ body {
 }
 #hidden{
 visibility: hidden;
-
+}
+.footer-content{
+  display: block;
 }
